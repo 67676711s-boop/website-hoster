@@ -3,7 +3,7 @@ from datetime import datetime
 from sqlalchemy import DateTime, Integer, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
-from models.database import Base
+from database import Base
 
 
 class InviteJoin(Base):
