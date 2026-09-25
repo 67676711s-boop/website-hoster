@@ -3,7 +3,7 @@ import json
 from sqlalchemy import Boolean, Integer, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
-from models.database import Base
+from database import Base
 
 
 class GuildPanelConfig(Base):
