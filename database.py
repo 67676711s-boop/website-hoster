@@ -19,10 +19,10 @@ AsyncSessionLocal = async_sessionmaker(
 
 async def init_db() -> None:
     # Import every model before create_all().
-    import models.settings  # noqa: F401
-    import models.panels  # noqa: F401
-    import models.moderation  # noqa: F401
-    import models.invites  # noqa: F401
+    import settings  # noqa: F401
+    import panels  # noqa: F401
+    import moderation  # noqa: F401
+    import invites  # noqa: F401
 
     async with engine.begin() as connection:
         await connection.run_sync(Base.metadata.create_all)
